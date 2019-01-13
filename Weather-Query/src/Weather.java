@@ -11,20 +11,18 @@ public class Weather {
 		System.out.print("What is the name of the weather file? ");
 		Scanner scan = new Scanner(System.in);
 		String filename = scan.nextLine();
-		
 		System.out.println("File name = " + filename);
-		scan.close();
 		
 		// Load data from file and convert it to a map.
-		HashMap<String, information> map = new HashMap<String, information>();
+		HashMap<String, City> map = new HashMap<String, City>();
 		try {
 			FileReader fr = new FileReader(filename);
 			BufferedReader br = new BufferedReader(fr);
 			
 			String line = br.readLine();
 			while(line != null) {
-				information info = information.parse(line);
-				map.put(info.city.toLowerCase(), info);
+				City city = City.parse(line);
+				map.put(city.name.toLowerCase(), city);
 				line = br.readLine();
 			}
 			
@@ -32,15 +30,60 @@ public class Weather {
 			br.close();
 		} catch(FileNotFoundException fnfe) {
 			System.out.println("fnfe : " + fnfe.getMessage());
+			scan.close();
+			return;
 		} catch(IOException ioe) {
 			System.out.println("ioe : " + ioe.getMessage());
+			scan.close();
+			return;
 		}
-		
-		
-		
-	}
 
-	
+		String option = "";
+		while(true)
+		{
+			// Read the command and parse it.
+			System.out.print("For what city would you like weather information? (Press 'l' to see the city list) ");
+			while(!scan.hasNextLine());
+			option = scan.nextLine();
+			option = option.toLowerCase();
+			
+			// Exit
+			if(option.equals("exit"))
+				break;
+			
+			// List of City
+			else if(option.equals("l"))
+			{
+				for(String key : map.keySet())
+					System.out.println(map.get(key).name);
+			}
+				
+			// Show all cities information.
+			else if(option.equals("all"))
+			{
+				for(String key : map.keySet()) 
+				{
+					map.get(key).show_all();
+					System.out.println();
+				}
+			}
+			
+			// Specific City
+			else
+			{
+				City city = map.get(option);
+				if(city == null)
+				{
+					System.out.println("No such city: " + option + " in the database.");
+					continue;
+				}
+				city.query();
+
+			}
+		}
+		System.out.println("Thank you for using my weather program.");
+		scan.close();
+	}	
 }
 
 

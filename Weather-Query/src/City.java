@@ -10,7 +10,7 @@ public class City {
 	float visibility;
 	float windspeed;
 	int windDirection;
-	attribute [] info_attr = new attribute[6];
+	Attribute [] info_attr = new Attribute[6];
 	String []conditionDescription;
 	
 	public void show_all()
@@ -112,31 +112,31 @@ public class City {
 		// Parse the string of each attribute.
 		valuei = parseInt(attr[1], "Current Temperature");
 		info.currentTemperature = valuei;
-		info.info_attr[0] = attribute.init("current temperature", attr[1] + " degrees Fahrenheit.");
+		info.info_attr[0] = Attribute.init("current temperature", attr[1] + " degrees Fahrenheit.");
 		
 		valuei = parseInt(attr[2], "dayLow");
 		info.dayLow = valuei;
 		valuei = parseInt(attr[3], "dayHigh");
 		info.dayHigh = valuei;
-		info.info_attr[1] = attribute.init("low and high temperature", attr[2] + " and " + attr[3] + " degrees Fahrenheit.");
+		info.info_attr[1] = Attribute.init("low and high temperature", attr[2] + " and " + attr[3] + " degrees Fahrenheit.");
 		
 		valuei = parseInt(attr[4], "Humidity");
 		info.humidity = valuei;
-		info.info_attr[2] = attribute.init("humidity", attr[4] + "%.");
+		info.info_attr[2] = Attribute.init("humidity", attr[4] + "%.");
 		
 		valuef = parseFloat(attr[5], "Pressure");
 		info.pressure = valuef;
-		info.info_attr[3] = attribute.init("pressure", attr[5] + " Inch Hg.");
+		info.info_attr[3] = Attribute.init("pressure", attr[5] + " Inch Hg.");
 		
 		valuef = parseFloat(attr[6], "Visibility");
 		info.visibility = valuef;
-		info.info_attr[4] = attribute.init("visibility", attr[6] + " miles.");
+		info.info_attr[4] = Attribute.init("visibility", attr[6] + " miles.");
 		
 		valuef = parseFloat(attr[7], "Wind Speed");
 		info.windspeed = valuef;
 		valuei = parseInt(attr[8], "Wind Direction");
 		info.windDirection = valuei;
-		info.info_attr[5] = attribute.init("wind speed and direction", attr[7] + " miles/hour and " + attr[8] + " degrees.");
+		info.info_attr[5] = Attribute.init("wind speed and direction", attr[7] + " miles/hour and " + attr[8] + " degrees.");
 		
 		info.conditionDescription = new String[attr.length - 9];
 		for(int i = 9;i < attr.length;i ++)

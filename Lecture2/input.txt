@@ -1,3 +1,0 @@
-Hello CSCI201
-File IO is cool
-Java is better than C++

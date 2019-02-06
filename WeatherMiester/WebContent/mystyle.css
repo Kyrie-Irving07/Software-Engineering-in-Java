@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#main {
+	color:white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Capital {
+	text-align: left;
+	color:red
+	position: absolute;
+	top: 0px;
+  	left: 0px;
+  	@font-face {
+	  font-family: myFont;
+	  src: url(./Assignment2Images/Savoye_LET_Plain1.0.ttf);
+	}
+}
+
+#form {
+	display: inline-block;
+	font-size: large;
+}
+
+input #searchbutton {
+	background: #ccc url("/Assignment2Images/magnifying_glass.jpeg") no-repeat top left;
+}

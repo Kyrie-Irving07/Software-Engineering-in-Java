@@ -1,0 +1,11 @@
+<form action="Navigation" method="POST">
+	<font color="white">
+  	<input type="text" name="lat" /><font color="red"></font>
+  	<input type="text" name="long" /><font color="red"></font>
+		<button type="submit">
+		<img src="/Assignment2Images/magnifying_glass.jpeg" alt="Search"/>
+		</button><br />
+  	<input type="radio" name="option" value="city" onclick="Cityform()">City
+	<input type="radio" name="option" value="location"  checked="true" onclick="Locationform()"> Location (Lat/Long)<br />
+	</font>
+</form>

@@ -3766,3 +3766,260 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.core.net 4 0 2019-02-05 09:23:07.363
 !MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-02-05 13:38:37.458
+!MESSAGE Exception caught during execution of command '[git, --version]' in '/usr/bin', return code '1', error message 'xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+'
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-02-05 14:21:25.546
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-02-05 14:49:17.512
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-02-05 14:51:12.707
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 14:54:19.035
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 15:04:59.301
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 15:10:44.871
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-02-05 15:44:27.161
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2019-02-05 15:44:27.161
+!MESSAGE Multiple Contexts have a path of "/Weathermeister_Front-End".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-02-05 15:45:18.452
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2019-02-05 15:45:18.452
+!MESSAGE Multiple Contexts have a path of "/Weathermeister_Front-End".
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-02-05 15:45:37.853
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 15:46:40.162
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-02-05 15:46:48.556
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 15:49:01.000
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-02-05 15:55:33.700
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 15:55:55.531
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 15:56:31.695
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.filesystem 4 269 2019-02-05 16:23:04.283
+!MESSAGE File not found: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core.
+!STACK 0
+java.nio.file.NoSuchFileException: /Users/kyrie/Desktop/USC/CSCI 201/Software-Engineering-in-Java/.metadata/.plugins/org.eclipse.debug.core/.launches
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:308)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:258)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:228)
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:186)
+	at org.eclipse.wst.server.core.internal.Server.getLaunchConfiguration(Server.java:1770)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3559)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3502)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:377)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-02-05 16:28:56.920 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/kyrie/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/kyrie/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-02-05 16:29:18.760
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2019-02-05 16:29:19.621
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-05 16:29:19.621
+!MESSAGE A conflict occurred for ALT+SHIFT+D R:
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.debug,Debug RAP Application,
+		Debug RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@782e0844,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.debug,Debug on Server,
+		Debug the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@608c7b5b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-02-05 16:29:19.621
+!MESSAGE A conflict occurred for ALT+SHIFT+X R:
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.rap.tools.launch.RAPLaunchShortcut.run,Run RAP Application,
+		Run RAP Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2643ed03,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X R,
+	ParameterizedCommand(Command(org.eclipse.wst.server.launchShortcut.run,Run on Server,
+		Run the current selection on a server,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17d45cfb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-05 16:29:21.827
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-02-05 16:29:24.348
+!MESSAGE Exception caught during execution of command '[git, --version]' in '/usr/bin', return code '1', error message 'xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-05 17:24:21.510
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-05 17:24:21.535
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-02-05 18:41:17.589
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

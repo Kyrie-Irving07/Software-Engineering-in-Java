@@ -12,7 +12,15 @@ form {
 	right: 0px;
 	top: 0px;
 }
+tr { border: 2px solid white;}
 button {
+	background:Transparent;
+	border: none;
+}
+button:active {
+	background:gray;
+	border: none
+}
 </style>
 </head>
 <body id="main" background="./Assignment2Images/background.jpg">
@@ -33,10 +41,60 @@ button {
   </div>
   <font color="red" style="position:absolute; right:0; top:20px"><div id="info"></div></font>
 
+<%
+	String city[] = (String [])session.getAttribute("name_array");
+	String templow[] = (String [])session.getAttribute("templow");
+	String temphigh[] = (String [])session.getAttribute("temphigh");
+	int count = city.length;
+	int i = 0;
+%>
+
+<table id="mytable">
+<tr>
+	<th><font color="white" size="30px"> City </font></th>
+	<th><font color="white" size="30px"> Temp.Low </font></th>
+	<th><font color="white" size="30px"> Temp.High </font></th>
+</tr>
+<% for(i = 0; i < count; i ++) { %>
+	<tr>
+		<td><button onclick="go_details('<%=city[i] %>')"><font color="white" size="20px"><%=city[i] %></font></button></td>
+		<td><font color="white" size="20px"><%=templow[i] %></font></td>
+		<td><font color="white" size="20px"><%=temphigh[i] %></font></td>
+	</tr>
+<% } %>
+</table>
+
+<div id="sort">
+<font color="white" size=20px>Sorted By</font><br />
+<select id="Sort" onchange="sort();">
+	<option value="name">City Name A-Z</option>
+	<option value="named">City Name Z-A</option>
+	<option value="templow">Temp.Low ASC</option>
+	<option value="templowd">Temp.Low DASC</option>
+	<option value="temphigh">Temp.High ASC</option>
+	<option value="temphighd">Temp.High DASC</option>
+</select>
+</div>
 
 </body>
 
 <script>
+function go_details(city) {
+	console.log("123");
+	alart(city);
+}
+
+function sort() {
+    var selectBox = document.getElementById("Sort");
+    var sort = selectBox.options[selectBox.selectedIndex].value;
+	var xhttp = new XMLHttpRequest(); 
+	xhttp.open("GET",
+			"show_all?sort=" + sort
+			, false);
+	xhttp.send();
+	window.location.href = "showall.jsp";
+}
+   
 function switchform(option) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {

@@ -7,8 +7,8 @@ public class City {
 	String name;
 	double latitude;
 	double longitude;
-	int dayLow;
-	int dayHigh;
+	String dayLow;
+	String dayHigh;
 	Attribute [] info_attr = new Attribute[11];
 	String []conditionDescription;
 	boolean valid;
@@ -146,9 +146,9 @@ public class City {
 		info.info_attr[4] = Attribute.init("currenttemp", attr[7] + " degrees Fahrenheit.");
 		
 		valuei = info.parseInt(attr[8], "dayLow", out);
-		info.dayLow = valuei;
+		info.dayLow = attr[8];
 		valuei = info.parseInt(attr[9], "dayHigh", out);
-		info.dayHigh = valuei;
+		info.dayHigh = attr[9];
 		info.info_attr[5] = Attribute.init("templow", attr[8] + " degrees Fahrenheit.");
 		info.info_attr[6] = Attribute.init("temphigh", attr[9] + " degrees Fahrenheit.");
 		

@@ -40,6 +40,11 @@
 <script>
 
 function show_all() {
+	var xhttp = new XMLHttpRequest(); 
+	xhttp.open("GET",
+			"show_all?sort=name"
+			, false);
+	xhttp.send();
 	window.location.href = "showall.jsp";
 }
 

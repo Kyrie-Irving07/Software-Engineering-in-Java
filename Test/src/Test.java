@@ -7,6 +7,10 @@ import java.util.Scanner;
 public class Test {
 	public static void main(String []args) throws Exception 
 	{
+		String [] a = {"c", "d", "a", "b"};
+		String [] b = a.clone();
+		a[1] = "123";
+		System.out.print(b[1]);
 //		int a = 0;
 //		add_one(a);
 //		System.out.println(a);
@@ -33,10 +37,10 @@ public class Test {
 //		System.out.print(command.equals("the"));
 //		scan.close();
 //		
-		HashMap<String, String> map = new HashMap<String, String>();
-		map.put("ABC", "abc");
-		String a = map.get("ab1c");
-		System.out.println(a);
+//		HashMap<String, String> map = new HashMap<String, String>();
+//		map.put("ABC", "abc");
+//		String a = map.get("ab1c");
+//		System.out.println(a);
 	}
 	public static void add_one(int input)
 	{

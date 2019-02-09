@@ -14,7 +14,7 @@
 #logo {
 	display: block;
 	position: absolute;
-	top: 25%;
+	top: 180px;
 	left: 40%;
 }
 
@@ -31,9 +31,15 @@
 	border: none;
 	width: 100px;
 	height: 30px;
-	position: relative;
-	top: 76%;
+	display: inline-block;
+	position: absolute;
+	top: 400px;
 	left: 45%;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(./Assignment2Images/Savoye_LET_Plain1.0.ttf);
 }
 
 #Capital {
@@ -42,17 +48,14 @@
 	position: absolute;
 	top: 0px;
   	left: 0px;
-  	@font-face {
-	  font-family: myFont;
-	  src: url(./Assignment2Images/Savoye_LET_Plain1.0.ttf);
-	}
+  	font-famaly: myFont;
 }
 
 #form {
 	display: inline-block;
 	font-size: large;
 	position: absolute;
-	top: 63%;
+	top: 350px;
 	left: 40%;
 }
 
@@ -79,8 +82,8 @@
 
 #Sort {
 	font-size: 30px;
-	width: 200px;
-	height: 30px;
+	width: 250px;
+	height: 50px;
 }
 
 #location {

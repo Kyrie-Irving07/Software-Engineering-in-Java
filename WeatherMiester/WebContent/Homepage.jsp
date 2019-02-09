@@ -8,6 +8,11 @@
     <title>WeatherMeister</title>
 	<meta charset="ISO-8859-1">
 	<link rel="stylesheet" type="text/css" href="./mystyle.css" media="all">
+	<style>
+		h1 {
+			font-family: myFont;
+		}
+	</style>
 </head>
 <body id="main" background="./Assignment2Images/background.jpg" background-color="rgba(0,0,0,0.5)">
 

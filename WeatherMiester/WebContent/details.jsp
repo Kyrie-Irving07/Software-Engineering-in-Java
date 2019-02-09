@@ -30,13 +30,16 @@
 	width: 130px;
 	height: 130px;
 }
+h1 {
+	font-family: myFont;
+}
 	</style>
 </head>
 <body id="main" background="./Assignment2Images/background.jpg">
 
-  <div id="Capital">WeatherMeister</div>
+  <div id="Capital"><h1>WeatherMeister</h1></div>
   
-  <h1 style="color:white; top:20px; left:20px; position:absolute"><%=city_name %></h1>
+  <h2 style="color:white; top:20px; left:20px; position:absolute"><%=city_name %></h2>
   
   <div id="barform">
 	  <form name="myform" action="details.jsp" method="POST" onsubmit="return validate();">

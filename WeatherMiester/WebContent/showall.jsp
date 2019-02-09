@@ -25,9 +25,9 @@ button:active {
 </head>
 <body id="main" background="./Assignment2Images/background.jpg">
 
-  <div id="Capital">WeatherMeister</div>
+  <div id="Capital" style="font-family:myFont"><h1>WeatherMeister</h1></div>
   
-  <h1 style="color:white; top:20px; left:20px; position:absolute">All Cities</h1>
+  <h1 style="color:white; top:90px; left:20px; position:absolute; font-size:50px;">All Cities</h1>
   
   <div id="barform">
 	  <form name="myform" action="details.jsp" method="POST" onsubmit="return validate();">
@@ -57,7 +57,7 @@ button:active {
 </tr>
 <% for(i = 0; i < count; i ++) { %>
 	<tr>
-		<td><button onclick="go_details('<%=city[i] %>')"><font color="white" size="20px"><%=city[i] %></font></button></td>
+		<td><button name="test" onclick="go_details('<%=city[i] %>');"><font color="white" size="20px"><%=city[i] %></font></button></td>
 		<td><font color="white" size="20px"><%=templow[i] %></font></td>
 		<td><font color="white" size="20px"><%=temphigh[i] %></font></td>
 	</tr>
@@ -80,8 +80,13 @@ button:active {
 
 <script>
 function go_details(city) {
-	console.log("123");
-	alart(city);
+	var xhttp = new XMLHttpRequest(); 
+	xhttp.open("GET",
+			"Navigation?city=" + city +
+			"&option=city"
+			, false);
+	xhttp.send();
+	window.location.href = "details.jsp";
 }
 
 function sort() {
@@ -105,6 +110,42 @@ function switchform(option) {
   };
   xhttp.open("GET", "./Barform/" + option + "form.html", true);
   xhttp.send();
+}
+
+function validate() {
+	 var option;
+	 var radios = document.getElementsByName("option");
+	 for (var i = 0, length = radios.length; i < length; i ++)
+	 {
+	 	if(radios[i].checked)
+		{
+			option = radios[i].value;
+			break;
+		}
+	 }
+	 var xhttp = new XMLHttpRequest();
+	 if(option == "city")
+	 {
+		 xhttp.open("GET",
+				 "Navigation?city=" + document.myform.city.value +
+				 "&option=" + option
+				 , false);
+	 }
+	 else {
+		 xhttp.open("GET",
+				 "Navigation?option=" + option +
+				 "&lat=" + 	document.myform.lat.value +
+				 "&lon=" + 	document.myform.lon.value
+				 , false);
+	 }
+	 
+	 xhttp.send();
+	 if (xhttp.responseText.trim().length > 0) {
+			 document.getElementById("info").innerHTML = xhttp.responseText;
+			 return false; 
+	}
+	 return true;
+
 }
 </script>
 </html>

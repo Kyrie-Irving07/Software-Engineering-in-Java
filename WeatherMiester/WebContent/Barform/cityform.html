@@ -1,0 +1,8 @@
+<form name="myform" action="details.jsp" method="POST" onsubmit="return validate();">
+	<input type="text" name="city" value="Los Angeles"/><font color="red"></font>
+	<button id="barsearchbutton" type="submit" value="submit">
+		<img src="./Assignment2Images/magnifying_glass.jpeg" width="13" height="13" alt="search"><br />
+	</button>
+  	<input type="radio" name="option" value="city" checked="true" onclick="switchform('city')"><font color="white">City</font>
+	<input type="radio" name="option" value="location" onclick="switchform('location')"><font color="white">Location (Lat/Long)</font><br />
+</form>

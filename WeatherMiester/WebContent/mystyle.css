@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #main {
-	color:white;
+	color:gray;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -14,11 +14,17 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	vertical-align: middle;
+}
+
+#barsearchbutton {
+	background-color: white;
+	background: "/Assignment2Images/magnifying_glass.jpeg";
 }
 
 #Capital {
 	text-align: left;
-	color:red
+	color:white;
 	position: absolute;
 	top: 0px;
   	left: 0px;
@@ -33,6 +39,51 @@
 	font-size: large;
 }
 
-input #searchbutton {
-	background: #ccc url("/Assignment2Images/magnifying_glass.jpeg") no-repeat top left;
+#location {
+	position: absolute;
+	top: 100px;
+	left:15%;
+}
+
+#templow {
+	background: tansparent;
+	position: absolute;
+	top: 100px;
+	left:35%;
+}
+#temphigh {
+	background: tansparent;
+	position: absolute;
+	top: 100px;
+	left:55%;
+}
+#wind {
+	background: tansparent;
+	position: absolute;
+	top: 100px;
+	left:75%;
+}
+#humidity {
+	background: tansparent;
+	position: absolute;
+	top: 300px;
+	left:15%;
+}
+#coordinates {
+	background: tansparent;
+	position: absolute;
+	top: 300px;
+	left:35%;
+}
+#currenttemp {
+	background: tansparent;
+	position: absolute;
+	top: 300px;
+	left:55%;
+}
+#sun {
+	background: tansparent;
+	position: absolute;
+	top: 300px;
+	left:75%;
 }

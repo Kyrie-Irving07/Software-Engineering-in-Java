@@ -1,25 +1,17 @@
 package backend;
 
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class City {
 	String name;
-	String state;
-	String country;
 	double latitude;
 	double longitude;
-	String sunrise_time;
-	String sunset_time;
-	int currentTemperature;
 	int dayLow;
 	int dayHigh;
-	int humidity;
-	float pressure;
-	float visibility;
-	float windspeed;
-	int windDirection;
-	Attribute [] info_attr = new Attribute[13];
+	Attribute [] info_attr = new Attribute[11];
 	String []conditionDescription;
+	boolean valid;
 	
 	public void show_all()
 	{
@@ -98,74 +90,80 @@ public class City {
 		}
 	}
 	
-	public static City parse(String str) throws Exception
+	public String search(String attr) {
+		String answer = attr + " Not Found";
+		for(int i = 0;i < this.info_attr.length;i ++) {
+			System.out.println(attr + ": " + this.info_attr[i].name);
+			if(attr.equals(this.info_attr[i].name)) {
+				answer = this.info_attr[i].value;
+				break;
+			}
+		}
+		return answer;
+	}
+	
+	public static City parse(String str, PrintWriter out) throws Exception
 	{
 		String []attr = str.split("\\|");
+
+		// The first element of String array is name of city.
+		City info = new City();
+		info.valid = true;
 		
 		// If the length of array is no larger than the number of attributes.
 		// Exception raised.
-		if(attr.length < 10)
+		if(attr.length < 16)
 		{
-			throw new Exception("There are no enough parameters on line : " + str);
+			info.valid = false;
+			out.println("There are no enough parameters on line : " + str);
+			return info;
 		}
 		
-		// The first element of String array is name of city.
-		City info = new City();
 		info.name = attr[0];
-		info.info_attr[0] = Attribute.init(attr[0], attr[0]);
+		info.info_attr[0] = Attribute.init("name", attr[0]);
 		
 		// The next two elements are state and country of city
-		info.state = attr[1];
-		info.country = attr[2];
-		info.info_attr[1] = Attribute.init(attr[1], attr[1]);
-		info.info_attr[2] = Attribute.init(attr[2], attr[2]);
+		info.info_attr[1] = Attribute.init("location", attr[1] + " " + attr[2]);
 		
 		// Used to save value from parsing.
 		float valuef = (float) 0.0;
 		int valuei = 0;
 		
 		// latitude and longitude of city
-		valuef = parseFloat(attr[3], "latitude");
+		valuef = info.parseFloat(attr[3], "latitude", out);
 		info.latitude = valuef;
-		info.info_attr[3] = Attribute.init("latitude", attr[3]);
-		valuef = parseFloat(attr[4], "longitude");
+		valuef = info.parseFloat(attr[4], "longitude", out);
 		info.longitude = valuef;
-		info.info_attr[4] = Attribute.init("longitude", attr[4]);
+		info.info_attr[2] = Attribute.init("coordinates", attr[3] + ", " +  attr[4]);
 		
 		// sunrise and sunset time
-		parseTime(attr[5], "sunrise");
-		parseTime(attr[6], "sunset");
-		info.info_attr[5] = Attribute.init("sunrise_time", attr[6]);
-		info.info_attr[6] = Attribute.init("sunset_time", attr[7]);
+		info.parseTime(attr[5], "sunrise", out);
+		info.parseTime(attr[6], "sunset", out);
+		info.info_attr[3] = Attribute.init("sun", attr[5] + ", " + attr[6]);
 		
 		// Parse the string of each attribute.
-		valuei = parseInt(attr[7], "Current Temperature");
-		info.currentTemperature = valuei;
-		info.info_attr[7] = Attribute.init("current temperature", attr[7] + " degrees Fahrenheit.");
+		info.parseInt(attr[7], "Current Temperature", out);
+		info.info_attr[4] = Attribute.init("currenttemp", attr[7] + " degrees Fahrenheit.");
 		
-		valuei = parseInt(attr[8], "dayLow");
+		valuei = info.parseInt(attr[8], "dayLow", out);
 		info.dayLow = valuei;
-		valuei = parseInt(attr[9], "dayHigh");
+		valuei = info.parseInt(attr[9], "dayHigh", out);
 		info.dayHigh = valuei;
-		info.info_attr[8] = Attribute.init("low and high temperature", attr[8] + " and " + attr[9] + " degrees Fahrenheit.");
+		info.info_attr[5] = Attribute.init("templow", attr[8] + " degrees Fahrenheit.");
+		info.info_attr[6] = Attribute.init("temphigh", attr[9] + " degrees Fahrenheit.");
 		
-		valuei = parseInt(attr[10], "Humidity");
-		info.humidity = valuei;
-		info.info_attr[9] = Attribute.init("humidity", attr[10] + "%.");
+		info.parseInt(attr[10], "Humidity", out);
+		info.info_attr[7] = Attribute.init("humidity", attr[10] + "%.");
 		
-		valuef = parseFloat(attr[11], "Pressure");
-		info.pressure = valuef;
-		info.info_attr[10] = Attribute.init("pressure", attr[11] + " Inch Hg.");
+		info.parseFloat(attr[11], "Pressure", out);
+		info.info_attr[8] = Attribute.init("pressure", attr[11] + " Inch Hg.");
 		
-		valuef = parseFloat(attr[12], "Visibility");
-		info.visibility = valuef;
-		info.info_attr[11] = Attribute.init("visibility", attr[12] + " miles.");
+		info.parseFloat(attr[12], "Visibility", out);
+		info.info_attr[9] = Attribute.init("visibility", attr[12] + " miles.");
 		
-		valuef = parseFloat(attr[13], "Wind Speed");
-		info.windspeed = valuef;
-		valuei = parseInt(attr[14], "Wind Direction");
-		info.windDirection = valuei;
-		info.info_attr[12] = Attribute.init("wind speed and direction", attr[13] + " miles/hour and " + attr[14] + " degrees.");
+		info.parseFloat(attr[13], "Wind Speed", out);
+		info.parseInt(attr[14], "Wind Direction", out);
+		info.info_attr[10] = Attribute.init("wind", attr[13] + " miles/hour <br //> " + attr[14] + " degrees.");
 		
 		info.conditionDescription = new String[attr.length - 15];
 		for(int i = 15;i < attr.length;i ++)
@@ -175,31 +173,33 @@ public class City {
 		return info;
 	}
 	
-	public static int parseInt(String input, String name) throws Exception
+	public int parseInt(String input, String name, PrintWriter out) throws Exception
 	{
 		int valuei = 0;
 		try
 		{
 			valuei = Integer.parseInt(input);
 		} catch(NumberFormatException e) {
-			throw new Exception("name + \" parsing exception : \" + e.getMessage()");
+			this.valid = false;
+			out.println("name + \" parsing exception : \" + e.getMessage()");
 		}
 		return valuei;
 	}
 	
-	public static float parseFloat(String input, String name) throws Exception
+	public float parseFloat(String input, String name, PrintWriter out) throws Exception
 	{
 		float valuef = (float) 0.0;
 		try
 		{
 			valuef = Float.parseFloat(input);
 		} catch(NumberFormatException e) {
-			throw new Exception(name + " parsing exception : " + e.getMessage());
+			this.valid = false;
+			out.println(name + " parsing exception : " + e.getMessage());
 		}
 		return valuef;
 	}
 
-	public static boolean parseTime(String input, String name) throws Exception
+	public boolean parseTime(String input, String name, PrintWriter out) throws Exception
 	{
 		boolean result = true;
 		if(!(input.endsWith(" am")||input.endsWith(" pm")))
@@ -210,10 +210,13 @@ public class City {
 		time = time[0].split(":");
 		if(!(time.length==2))
 			result = false;
-		parseInt(time[0], "Time of sunrise and sunset");
-		parseInt(time[1], "Time of sunrise and senset");
+		parseInt(time[0], "Time of sunrise and sunset", out);
+		parseInt(time[1], "Time of sunrise and senset", out);
 		if(!result)
-			throw new Exception(name + " parsing exception");
+		{
+			this.valid = false;
+			out.println(name + " parsing exception");
+		}
 		return result;
 	}
 }

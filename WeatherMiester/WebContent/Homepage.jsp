@@ -4,68 +4,82 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<%
-	String option = request.getParameter("option");
-	if(option==null) option="city";
-	
-	String city = request.getParameter("city");
-	if(city==null) city = "Los Angeles";
-	
-	String cityError = request.getParameter("cityError");
-	cityError = string_process.process(cityError);
-%>
+
     <title>WeatherMeister</title>
 	<meta charset="ISO-8859-1">
-	<link rel="stylesheet" type="text/css" href="mystyle.css" media="all">
+	<link rel="stylesheet" type="text/css" href="./mystyle.css" media="all">
 </head>
 <body id="main" background="./Assignment2Images/background.jpg">
 
   <h1 id="Capital">WeatherMeister</h1>
 
   <div id="logo">
-    <img src="./Assignment2Images/logo.png" width="200" height="200">
+    <img src="./Assignment2Images/logo.png" width="200" height="200"><br />
   </div>
   
   <div id="form">
-	  <form action="Navigation" method="POST" >
-			<input type="text" name="city" value="<%=city %>" /><font color="red"><%=cityError %></font>
-			<button type="submit">
-			<img src="/Assignment2Images/magnifying_glass.jpeg" alt="Search"/>
+	  <form name="myform" action="details.jsp" method="POST" onsubmit="return validate()">
+			<input type="text" name="city" value="Los Angeles"
+			 style="background:rgba(0, 0, 0, 0.5); color:gray"/><font color="red"></font>
+			<button type="submit" value="submit">
+				<img src="./Assignment2Images/magnifying_glass.jpeg" width="13" height="13" alt="search"><br />
 			</button>
 			<br />
-		  	<input type="radio" name="option" value="city" checked="true" onclick="Cityform()"><font color="white">City</font>
-			<input type="radio" name="option" value="location" onclick="Locationform()"><font color="white">Location (Lat/Long)</font><br />
+		  	<input type="radio" name="option" value="city" checked="true" onclick="switchform('city')"><font color="white">City</font>
+			<input type="radio" name="option" value="location" onclick="switchform('location')"><font color="white">Location (Lat/Long)</font><br />
 	  </form>
   </div>
- 
-	<script>
-	function jumptest() {
-		windows.location.href = "index.jsp";
-	}
-	
-	function Cityform() {
-	  var xhttp = new XMLHttpRequest();
-	  xhttp.onreadystatechange = function() {
-	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("form").innerHTML =
-	      this.responseText;
-	    }
-	  };
-	  xhttp.open("GET", "cityform.txt", true);
-	  xhttp.send();
-	}
-	
-	function Locationform() {
-	  var xhttp = new XMLHttpRequest();
-	  xhttp.onreadystatechange = function() {
-	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("form").innerHTML =
-	      this.responseText;
-	    }
-	  };
-	  xhttp.open("GET", "locationform.txt", true);
-	  xhttp.send();
-	}
-	</script>
-
+  <font color="red"><div id="info"></div></font>
+  
 </body>
+
+<script>
+
+function switchform(option) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("form").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "./Bigform/" + option + "form.html", true);
+  xhttp.send();
+}
+
+function validate() {
+	 var option;
+	 var radios = document.getElementsByName("option");
+	 for (var i = 0, length = radios.length; i < length; i ++)
+	 {
+	 	if(radios[i].checked)
+ 		{
+ 			option = radios[i].value;
+ 			break;
+ 		}
+	 }
+	 var xhttp = new XMLHttpRequest();
+	 if(option == "city")
+	 {
+		 xhttp.open("GET",
+				 "Navigation?city=" + document.myform.city.value +
+				 "&option=" + option
+				 , false);
+	 }
+	 else {
+		 xhttp.open("GET",
+				 "Navigation?option=" + option +
+				 "&lat=" + 	document.myform.lat.value +
+				 "&lon=" + 	document.myform.lon.value
+				 , false);
+	 }
+	 
+	 xhttp.send();
+	 if (xhttp.responseText.trim().length > 0) {
+			 document.getElementById("info").innerHTML = xhttp.responseText;
+			 return false; 
+	}
+	 return true;
+
+}
+</script>

@@ -2,6 +2,10 @@
     pageEncoding="ISO-8859-1" import="backend.string_process, backend.Weather, java.util.HashMap, backend.City"%>
 <!DOCTYPE html>
 
+  
+  <%
+  	Object city_name = session.getAttribute("city_name");
+  %>
 
 <html>
 <head>
@@ -23,6 +27,8 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
+	width: 130px;
+	height: 130px;
 }
 	</style>
 </head>
@@ -30,7 +36,9 @@
 
   <div id="Capital">WeatherMeister</div>
   
-  <div id="form">
+  <h1 style="color:white; top:20px; left:20px; position:absolute"><%=city_name %></h1>
+  
+  <div id="barform">
 	  <form name="myform" action="details.jsp" method="POST" onsubmit="return validate();">
 			<input type="text" name="city" /><font color="red"></font>
 			<button id="barsearchbutton" type="submit">
@@ -149,7 +157,7 @@ function switchform(option) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("form").innerHTML =
+      document.getElementById("barform").innerHTML =
       this.responseText;
     }
   };
@@ -193,3 +201,5 @@ function validate() {
 
 }
 </script>
+
+</html>

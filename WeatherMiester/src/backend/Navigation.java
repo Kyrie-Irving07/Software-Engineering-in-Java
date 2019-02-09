@@ -44,6 +44,7 @@ public class Navigation extends HttpServlet {
 			}
 			System.out.println(city.name);
 			System.out.println(city.info_attr[1].value + " " + city.info_attr[2].value);
+			session.setAttribute("city_name", city.name);
 			session.setAttribute("city", city);
 		}
 		else {
@@ -89,6 +90,7 @@ public class Navigation extends HttpServlet {
 			}
 			System.out.println(city.name);
 			System.out.println(city.info_attr[1].value + " " + city.info_attr[2].value);
+			session.setAttribute("city_name", city.name);
 			session.setAttribute("city", city);
 		}
     }

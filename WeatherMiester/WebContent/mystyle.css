@@ -8,18 +8,32 @@
 	left: 0;
 	bottom: 0;
 	text-align: center;
+ 	background-color: rgba(0,0,0,0.7);
 }
 
 #logo {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	vertical-align: middle;
+	position: absolute;
+	top: 25%;
+	left: 40%;
 }
 
 #barsearchbutton {
 	background-color: white;
 	background: "/Assignment2Images/magnifying_glass.jpeg";
+	width: 20px;
+	height: 20px;
+}
+
+#showall {
+	background-color: transparent;
+	background: rgba(0,0,0,0.5);
+	border: none;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 76%;
+	left: 45%;
 }
 
 #Capital {
@@ -37,6 +51,9 @@
 #form {
 	display: inline-block;
 	font-size: large;
+	position: absolute;
+	top: 63%;
+	left: 40%;
 }
 
 #location {

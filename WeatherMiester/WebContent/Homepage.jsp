@@ -9,7 +9,7 @@
 	<meta charset="ISO-8859-1">
 	<link rel="stylesheet" type="text/css" href="./mystyle.css" media="all">
 </head>
-<body id="main" background="./Assignment2Images/background.jpg">
+<body id="main" background="./Assignment2Images/background.jpg" background-color="rgba(0,0,0,0.5)">
 
   <h1 id="Capital">WeatherMeister</h1>
 
@@ -31,9 +31,17 @@
   </div>
   <font color="red"><div id="info"></div></font>
   
+  <br />
+  
+  <button id="showall" name="show_all" onclick="show_all()"><font color="white">Display All</font></button>
+  
 </body>
 
 <script>
+
+function show_all() {
+	window.location.href = "showall.jsp";
+}
 
 function switchform(option) {
   var xhttp = new XMLHttpRequest();

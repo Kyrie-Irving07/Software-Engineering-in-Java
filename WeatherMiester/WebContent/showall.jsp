@@ -25,7 +25,7 @@ button:active {
 </head>
 <body id="main" background="./Assignment2Images/background.jpg">
 
-  <div id="Capital" style="font-family:myFont"><h1>WeatherMeister</h1></div>
+  <div id="Capital" style="font-family:myFont"><a href="Homepage.jsp" style="color:white; text-decoration: none;"><h1>WeatherMeister</h1></a></div>
   
   <h1 style="color:white; top:90px; left:20px; position:absolute; font-size:50px;">All Cities</h1>
   
@@ -49,7 +49,7 @@ button:active {
 	int i = 0;
 %>
 
-<table id="mytable">
+<table id="mytable" style="display:block; height:400px; overflow-y:scroll;">
 <tr>
 	<th><font color="white" size="30px"> City </font></th>
 	<th><font color="white" size="30px"> Temp.Low </font></th>

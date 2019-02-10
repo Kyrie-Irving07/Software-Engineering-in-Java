@@ -37,9 +37,9 @@ h1 {
 </head>
 <body id="main" background="./Assignment2Images/background.jpg">
 
-  <div id="Capital"><h1>WeatherMeister</h1></div>
+  <div id="Capital"><a href="Homepage.jsp" style="color:white; text-decoration: none;"><h1>WeatherMeister</h1></a></div>
   
-  <h2 style="color:white; top:20px; left:20px; position:absolute"><%=city_name %></h2>
+  <h2 style="color:white; top:40px; left:20px; position:absolute"><%=city_name %></h2>
   
   <div id="barform">
 	  <form name="myform" action="details.jsp" method="POST" onsubmit="return validate();">

@@ -26,39 +26,38 @@ public class show_all extends HttpServlet {
 		String sort = request.getParameter("sort");
 		// Get name array
 		String name_array[] = new String[map.size()];
-		String value[] = name_array.clone();
+		String value[] = new String[map.size()];
 		int j = 0;
 		for(String key: map.keySet()) {
-			name_array[j++] = key;
+			value[j] = key;
+			name_array[j++] = map.get(key).name;
 		}
 		//Decide value array
 		int direction = 1;
 		if(sort.equals("name")) {
-			value = name_array.clone();
 			direction = 1;
 		}
 		else if(sort.equals("named")) {
-			value = name_array.clone();
 			direction = -1;
 		}
 		else if(sort.equals("templow")) {
 			for(int i = 0;i < name_array.length;i ++)
-				value[i] = map.get(name_array[i]).dayLow;
+				value[i] = map.get(name_array[i].toLowerCase()).dayLow;
 			direction = 1;
 		}
 		else if(sort.equals("templowd")) {
 			for(int i = 0;i < name_array.length;i ++)
-				value[i] = map.get(name_array[i]).dayLow;
+				value[i] = map.get(name_array[i].toLowerCase()).dayLow;
 			direction = -1;
 		}
 		else if(sort.equals("temphigh")) {
 			for(int i = 0;i < name_array.length;i ++)
-				value[i] = map.get(name_array[i]).dayHigh;
+				value[i] = map.get(name_array[i].toLowerCase()).dayHigh;
 			direction = 1;
 		}
 		else if(sort.equals("temphighd")) {
 			for(int i = 0;i < name_array.length;i ++)
-				value[i] = map.get(name_array[i]).dayHigh;
+				value[i] = map.get(name_array[i].toLowerCase()).dayHigh;
 			direction = -1;
 		}
 		
@@ -66,8 +65,8 @@ public class show_all extends HttpServlet {
 		String [] templow = new String[name_array.length];
 		String [] temphigh = new String[name_array.length];
 		for(int i = 0;i < name_array.length;i ++) {
-			templow[i] = map.get(name_array[i]).dayLow;
-			temphigh[i] = map.get(name_array[i]).dayHigh;
+			templow[i] = map.get(name_array[i].toLowerCase()).dayLow;
+			temphigh[i] = map.get(name_array[i].toLowerCase()).dayHigh;
 		}
 		session.setAttribute("name_array", name_array);
 		session.setAttribute("templow", templow);

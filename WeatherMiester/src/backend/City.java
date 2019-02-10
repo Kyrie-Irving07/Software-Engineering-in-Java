@@ -13,87 +13,9 @@ public class City {
 	String []conditionDescription;
 	boolean valid;
 	
-	public void show_all()
-	{
-		// Print 6 Attributes.
-		for(int i = 0;i < 6; i ++)
-			System.out.println("The " + this.info_attr[i].name + " in " + this.name  + " is " + this.info_attr[i].value);
-		
-		// Print the description of the city.
-		System.out.print(this.name + " weather can be discribed as ");
-		for(int i = 0;i < this.conditionDescription.length;i ++)
-		{
-			if(i == this.conditionDescription.length - 1)
-				System.out.print(" and ");
-			else if(i != 0)
-				System.out.print(", ");
-			System.out.print(this.conditionDescription[i]);
-		}
-		System.out.println(".");
-	}
-	
-	public void query() throws Exception
-	{
-		System.out.println
-		("I do have information about the weather in Los Angeles.\r\n" + 
-				"1) Temperature\r\n" + 
-				"2) High and low temperature today\r\n" + 
-				"3) Humidity\r\n" + 
-				"4) Pressure\r\n" + 
-				"5) Visibility\r\n" + 
-				"6) Wind speed and direction\r\n" + 
-				"7) Descriptions of weather conditions\r\n" + 
-				"8) Everything\r\n" + 
-				"9) Enter a different city");
-		@SuppressWarnings("resource")
-		Scanner scan = new Scanner(System.in);
-		String option;
-		while(true)
-		{
-			System.out.print("What information of " + this.name + " do you like to know? ");
-			option = scan.nextLine();
-			
-			// Invalid Option
-			if(option.length() != 1 || (int)option.charAt(0) > '9' || (int)option.charAt(0) < '0')
-			{
-				System.out.println("Invalid option: " + option + ". Only 1~9 are valid option.");
-				continue;
-			}
-			int opt = Integer.parseInt(option);
-			
-			// To Another City
-			if(opt == 9)
-				break;
-			
-			// All Information of The City
-			else if(opt == 8)
-				this.show_all();
-			
-			// The Description of The City
-			else if(opt == 7)
-			{
-				System.out.print(this.name + " weather can be discribed as");
-				for(int i = 0;i < this.conditionDescription.length;i ++)
-				{
-					if(i == this.conditionDescription.length - 2)
-						System.out.print(" and ");
-					else if(i != 0)
-						System.out.print(", ");
-					System.out.print(this.conditionDescription[i]);
-				}
-				System.out.println(".");
-			}
-			
-			// Some Specific Attribute
-			else
-				System.out.println("The " + this.info_attr[opt-1].name + " in " + this.name + " is " + this.info_attr[opt-1].value);
-		}
-	}
-	
 	public String search(String attr) {
 		String answer = attr + " Not Found";
 		for(int i = 0;i < this.info_attr.length;i ++) {
-			System.out.println(attr + ": " + this.info_attr[i].name);
 			if(attr.equals(this.info_attr[i].name)) {
 				answer = this.info_attr[i].value;
 				break;
@@ -115,7 +37,7 @@ public class City {
 		if(attr.length < 16)
 		{
 			info.valid = false;
-			out.println("There are no enough parameters on line : " + str);
+			out.println("There are no enough parameters on line : " + str + "<br />");
 			return info;
 		}
 		
@@ -181,7 +103,7 @@ public class City {
 			valuei = Integer.parseInt(input);
 		} catch(NumberFormatException e) {
 			this.valid = false;
-			out.println("name + \" parsing exception : \" + e.getMessage()");
+			out.println(name + " parsing exception : " + e.getMessage() + "<br />");
 		}
 		return valuei;
 	}
@@ -194,7 +116,7 @@ public class City {
 			valuef = Float.parseFloat(input);
 		} catch(NumberFormatException e) {
 			this.valid = false;
-			out.println(name + " parsing exception : " + e.getMessage());
+			out.println(name + " parsing exception : " + e.getMessage() + "<br />");
 		}
 		return valuef;
 	}
@@ -215,7 +137,7 @@ public class City {
 		if(!result)
 		{
 			this.valid = false;
-			out.println(name + " parsing exception");
+			out.println(name + " parsing exception" + "<br />");
 		}
 		return result;
 	}

@@ -27,8 +27,6 @@ public class Navigation extends HttpServlet {
     
     protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
-		System.out.println("Enter Navigation");
-
     	HttpSession session = request.getSession();
 		HashMap<String, City> map = (HashMap<String, City>) session.getAttribute("map");
 		
@@ -42,8 +40,7 @@ public class Navigation extends HttpServlet {
 				out.print("No such city: " + city_name);
 				return;
 			}
-			System.out.println(city.name);
-			System.out.println(city.info_attr[1].value + " " + city.info_attr[2].value);
+			System.out.println("Pick " + city.name);
 			session.setAttribute("city_name", city.name);
 			session.setAttribute("city", city);
 		}
@@ -88,8 +85,7 @@ public class Navigation extends HttpServlet {
 				out.print("No cities in such location: Lat " + lat + " Lon " + lon + "<br />");
 				return;
 			}
-			System.out.println(city.name);
-			System.out.println(city.info_attr[1].value + " " + city.info_attr[2].value);
+			System.out.println("Pick " + city.name);
 			session.setAttribute("city_name", city.name);
 			session.setAttribute("city", city);
 		}

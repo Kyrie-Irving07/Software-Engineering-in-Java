@@ -33,7 +33,7 @@ public class Weather extends HttpServlet {
 		// Load data from file and convert it to a map.
 		HashMap<String, City> map = new HashMap<String, City>();
 		try {
-			FileReader fr = new FileReader("goodweather.txt");
+			FileReader fr = new FileReader("./weather.txt");
 			BufferedReader br = new BufferedReader(fr);
 			
 			String line = br.readLine();
@@ -48,15 +48,15 @@ public class Weather extends HttpServlet {
 			br.close();
 		} catch(FileNotFoundException fnfe) {
 			System.out.println("fnfe : " + fnfe.getMessage());
-			out.println("fnfe : " + fnfe.getMessage());
+			out.println("fnfe : " + fnfe.getMessage() + "<br />");
 			scan.close();
 		} catch(IOException ioe) {
 			System.out.println("ioe : " + ioe.getMessage());
-			out.println("ioe : " + ioe.getMessage());
+			out.println("ioe : " + ioe.getMessage() + "<br />");
 			scan.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-			out.println(e.toString());
+			out.println(e.toString() + "<br />");
 			scan.close();
 		}
 		scan.close();
@@ -66,6 +66,11 @@ public class Weather extends HttpServlet {
 			session.setAttribute("map", map);
 			System.out.println("Load successfully!");
 		}
+	}
+	
+	public FileReader readFile() throws FileNotFoundException {
+		FileReader fr = new FileReader("./weather.txt");
+		return fr;
 	}
 	
 }

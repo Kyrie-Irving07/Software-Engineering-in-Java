@@ -20,7 +20,7 @@ public class get_image extends HttpServlet {
 		String weather = request.getParameter("weather");
 		out.print("	<button name=\"currenttemp\" onclick=\"show_info('" + weather + "')\">\n" + 
 				"	 <img src=\"./Assignment2Images/" + weather + ".png\" width=\"100\" height=\"100\" alt=\"" + weather + "\"><br />\n" + 
-				"	<font color=white style=\"font-size:large\">CurrentTemp</font>\n" + 
+				"	<font color=white style=\"font-size:large\">" + weather + "</font>\n" + 
 				"	</button>");
     }
 

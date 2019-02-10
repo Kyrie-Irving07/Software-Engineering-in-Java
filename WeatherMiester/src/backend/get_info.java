@@ -15,7 +15,6 @@ public class get_info extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-		System.out.println("Searching");
 		String weather = request.getParameter("weather");
     	HttpSession session = request.getSession();
 		City city = (City) session.getAttribute("city");

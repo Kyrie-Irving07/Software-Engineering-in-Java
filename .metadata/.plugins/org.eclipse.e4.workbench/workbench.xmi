@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ER2bURa3Eemc3MArBuQ8kg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_ER2bUha3Eemc3MArBuQ8kg" bindingContexts="_ER2bVBa3Eemc3MArBuQ8kg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;validation.java&quot; tooltip=&quot;WeatherMiester/src/backend/validation.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/validation.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Weather.java&quot; tooltip=&quot;WeatherMiester/src/backend/Weather.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/Weather.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;string_process.java&quot; tooltip=&quot;WeatherMiester/src/backend/string_process.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/string_process.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;show_all.java&quot; tooltip=&quot;WeatherMiester/src/backend/show_all.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/show_all.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;get_info.java&quot; tooltip=&quot;WeatherMiester/src/backend/get_info.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/get_info.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;City.java&quot; tooltip=&quot;WeatherMiester/src/backend/City.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/City.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Homepage.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/Homepage.jsp&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/WebContent/Homepage.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;details.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/details.jsp&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/WebContent/details.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;index.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/index.jsp&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/WebContent/index.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;validation.java&quot; tooltip=&quot;WeatherMiester/src/backend/validation.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/validation.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Weather.java&quot; tooltip=&quot;WeatherMiester/src/backend/Weather.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/Weather.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;string_process.java&quot; tooltip=&quot;WeatherMiester/src/backend/string_process.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/string_process.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;show_all.java&quot; tooltip=&quot;WeatherMiester/src/backend/show_all.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/show_all.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;get_info.java&quot; tooltip=&quot;WeatherMiester/src/backend/get_info.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/get_info.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;City.java&quot; tooltip=&quot;WeatherMiester/src/backend/City.java&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/src/backend/City.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Homepage.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/Homepage.jsp&quot;>&#xA;&lt;persistable path=&quot;/WeatherMiester/WebContent/Homepage.jsp&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_ER2bUha3Eemc3MArBuQ8kg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_EjoH0xa3Eemc3MArBuQ8kg" label="%trimmedwindow.label.eclipseSDK" x="466" y="74" width="1440" height="900">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_ER2bUha3Eemc3MArBuQ8kg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_EjoH0xa3Eemc3MArBuQ8kg" label="%trimmedwindow.label.eclipseSDK" x="466" y="74" width="1440" height="816">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -11,6 +11,7 @@
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1547331119021"/>
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_EjoH0xa3Eemc3MArBuQ8kg" selectedElement="_EjoH1Ba3Eemc3MArBuQ8kg" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_EjoH1Ba3Eemc3MArBuQ8kg" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_menFACmOEemibbMgTelKyg">
         <children xsi:type="advanced:Perspective" xmi:id="_E4lEJRa3Eemc3MArBuQ8kg" elementId="org.eclipse.jdt.ui.JavaPerspective" selectedElement="_E4lEJha3Eemc3MArBuQ8kg" label="Java" iconURI="platform:/plugin/org.eclipse.jdt.ui/$nl$/icons/full/eview16/jperspective.png">
@@ -642,7 +643,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_E4IYMBa3Eemc3MArBuQ8kg" elementId="org.eclipse.ui.editorss" selectedElement="_E4IYMRa3Eemc3MArBuQ8kg">
-      <children xsi:type="basic:PartStack" xmi:id="_E4IYMRa3Eemc3MArBuQ8kg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_a_jGECmhEemibbMgTelKyg">
+      <children xsi:type="basic:PartStack" xmi:id="_E4IYMRa3Eemc3MArBuQ8kg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_3zLIgCsMEemjIsO4DYLssw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -651,29 +652,27 @@
           <tags>Editor</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_Hhk4ECsuEemjIsO4DYLssw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Weather.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Weather.java&quot; partName=&quot;Weather.java&quot; title=&quot;Weather.java&quot; tooltip=&quot;WeatherMiester/src/backend/Weather.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/src/backend/Weather.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;6&quot; selectionOffset=&quot;1687&quot; selectionTopPixel=&quot;42&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Weather.java&quot; partName=&quot;Weather.java&quot; title=&quot;Weather.java&quot; tooltip=&quot;WeatherMiester/src/backend/Weather.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/src/backend/Weather.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;6&quot; selectionOffset=&quot;1687&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_bN5rICmhEemibbMgTelKyg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Homepage.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Homepage.jsp&quot; partName=&quot;Homepage.jsp&quot; title=&quot;Homepage.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/Homepage.jsp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/WebContent/Homepage.jsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;267&quot; selectionTopPixel=&quot;490&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;Homepage.jsp&quot; partName=&quot;Homepage.jsp&quot; title=&quot;Homepage.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/Homepage.jsp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/WebContent/Homepage.jsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;267&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_3xJ4oCrzEemUvuvkp1KRxg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Navigation.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Navigation.java&quot; partName=&quot;Navigation.java&quot; title=&quot;Navigation.java&quot; tooltip=&quot;WeatherMiester/src/backend/Navigation.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/src/backend/Navigation.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1282&quot; selectionTopPixel=&quot;251&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Navigation.java&quot; partName=&quot;Navigation.java&quot; title=&quot;Navigation.java&quot; tooltip=&quot;WeatherMiester/src/backend/Navigation.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/src/backend/Navigation.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1282&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_8MiL4CsAEemnvJ0rsmzQMQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="mystyle.css" iconURI="platform:/plugin/org.eclipse.wst.css.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;mystyle.css&quot; partName=&quot;mystyle.css&quot; title=&quot;mystyle.css&quot; tooltip=&quot;WeatherMiester/WebContent/mystyle.css&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/WebContent/mystyle.css&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;795&quot; selectionTopPixel=&quot;532&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;mystyle.css&quot; partName=&quot;mystyle.css&quot; title=&quot;mystyle.css&quot; tooltip=&quot;WeatherMiester/WebContent/mystyle.css&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/WebContent/mystyle.css&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;795&quot; selectionTopPixel=&quot;1449&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.css.core.csssource.source</tags>
           <tags>removeOnHide</tags>
@@ -690,12 +689,6 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="__U_nMCvoEem5gqdileD0ow" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="goodweather.txt" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;goodweather.txt&quot; partName=&quot;goodweather.txt&quot; title=&quot;goodweather.txt&quot; tooltip=&quot;WeatherMiester/WebContent/goodweather.txt&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/WebContent/goodweather.txt&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.ui.DefaultTextEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_jUPcwCvpEem5gqdileD0ow" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="City.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;City.java&quot; partName=&quot;City.java&quot; title=&quot;City.java&quot; tooltip=&quot;WeatherMiester/src/backend/City.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/src/backend/City.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;397&quot; selectionTopPixel=&quot;366&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -709,10 +702,12 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_3zLIgCsMEemjIsO4DYLssw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="details.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;details.jsp&quot; partName=&quot;details.jsp&quot; title=&quot;details.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/details.jsp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/WebContent/details.jsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;934&quot; selectionTopPixel=&quot;1412&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;details.jsp&quot; partName=&quot;details.jsp&quot; title=&quot;details.jsp&quot; tooltip=&quot;WeatherMiester/WebContent/details.jsp&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/WebContent/details.jsp&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;934&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="__iZycCwnEemn9p5KC7Ay2Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="get_info.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;get_info.java&quot; partName=&quot;get_info.java&quot; title=&quot;get_info.java&quot; tooltip=&quot;WeatherMiester/src/backend/get_info.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/WeatherMiester/src/backend/get_info.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;577&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
@@ -1053,7 +1048,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EmnKYha3Eemc3MArBuQ8kg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_WjchYCzGEemDWqyKWEixqA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ESeIlxa3Eemc3MArBuQ8kg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sdqPoC5rEemR4eX_o8Y5kQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_ESeIlxa3Eemc3MArBuQ8kg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EmnKYxa3Eemc3MArBuQ8kg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1096,7 +1091,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EmnKaha3Eemc3MArBuQ8kg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Wje9oCzGEemDWqyKWEixqA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_ESeIKha3Eemc3MArBuQ8kg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sdtS8C5rEemR4eX_o8Y5kQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_ESeIKha3Eemc3MArBuQ8kg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_EmnKaxa3Eemc3MArBuQ8kg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1570,7 +1565,7 @@
       <tags>platform:cocoa</tags>
     </bindings>
     <bindings xmi:id="_JXaFVSmOEemibbMgTelKyg" keySequence="COMMAND+BREAK" command="_ESbDHBa3Eemc3MArBuQ8kg"/>
-    <bindings xmi:id="_WRWr0CzGEemDWqyKWEixqA" keySequence="COMMAND+CTRL+F" command="_oU5q4iKAEemACaBua8xjNg"/>
+    <bindings xmi:id="_sK5rsS5rEemR4eX_o8Y5kQ" keySequence="COMMAND+CTRL+F" command="_oU5q4iKAEemACaBua8xjNg"/>
   </bindingTables>
   <bindingTables xmi:id="_ES6yWha3Eemc3MArBuQ8kg" elementId="org.eclipse.php.ui.phpEditorScope" bindingContext="_ESeJiBa3Eemc3MArBuQ8kg">
     <bindings xmi:id="_JXLb0CmOEemibbMgTelKyg" keySequence="F2" command="_ESeHXRa3Eemc3MArBuQ8kg"/>
@@ -2092,7 +2087,7 @@
   <bindingTables xmi:id="_E4SJdRa3Eemc3MArBuQ8kg" bindingContext="_E4SJdBa3Eemc3MArBuQ8kg"/>
   <bindingTables xmi:id="_E4SJdxa3Eemc3MArBuQ8kg" bindingContext="_E4SJdha3Eemc3MArBuQ8kg"/>
   <bindingTables xmi:id="_oU65AiKAEemACaBua8xjNg" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_ER2bVxa3Eemc3MArBuQ8kg">
-    <bindings xmi:id="_WRXS4CzGEemDWqyKWEixqA" keySequence="M1+W" command="_oU65ACKAEemACaBua8xjNg"/>
+    <bindings xmi:id="_sK6SwC5rEemR4eX_o8Y5kQ" keySequence="M1+W" command="_oU65ACKAEemACaBua8xjNg"/>
   </bindingTables>
   <bindingTables xmi:id="_Ggz9YSvYEem5gqdileD0ow" bindingContext="_Ggz9YCvYEem5gqdileD0ow"/>
   <rootContext xmi:id="_ER2bVBa3Eemc3MArBuQ8kg" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
@@ -4261,7 +4256,7 @@
   <addons xmi:id="_ER2bYxa3Eemc3MArBuQ8kg" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_ER2bZBa3Eemc3MArBuQ8kg" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_ER2bZRa3Eemc3MArBuQ8kg" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_WREX8CzGEemDWqyKWEixqA" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_oU4cwCKAEemACaBua8xjNg" elementId="org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler"/>
   <categories xmi:id="_ESWxoBa3Eemc3MArBuQ8kg" elementId="org.eclipse.ui.category.edit" name="Edit"/>

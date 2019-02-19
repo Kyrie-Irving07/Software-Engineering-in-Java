@@ -7,10 +7,13 @@ import java.util.Scanner;
 public class Test {
 	public static void main(String []args) throws Exception 
 	{
-		String [] a = {"c", "d", "a", "b"};
-		String [] b = a.clone();
-		a[1] = "123";
-		System.out.print(b[1]);
+		
+		
+		
+//		String [] a = {"c", "d", "a", "b"};
+//		String [] b = a.clone();
+//		a[1] = "123";
+//		System.out.print(b[1]);
 //		int a = 0;
 //		add_one(a);
 //		System.out.println(a);

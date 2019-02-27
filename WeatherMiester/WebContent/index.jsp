@@ -19,18 +19,18 @@
 </body>
 
 <script>
-	function load_data() {
-		var xhttp = new XMLHttpRequest(); 
-		xhttp.open("GET",
-				"Weather"
-				, false);
-		xhttp.send();
-		if (xhttp.responseText.trim().length > 0) {
-			document.getElementById("info").innerHTML = xhttp.responseText;
-		}	
-		else {
-			window.location.href = "Homepage.jsp";
-		}
+function load_data() {
+	var xhttp = new XMLHttpRequest(); 
+	xhttp.open("GET",
+			"Weather"
+			, false);
+	xhttp.send();
+	if (xhttp.responseText.trim().length > 0) {
+		document.getElementById("info").innerHTML = xhttp.responseText;
+	}	
+	else {
+		window.location.href = "Homepage.jsp";
+	}
 }
 </script>
 

@@ -1,10 +1,13 @@
-<form name="myform" action="details.jsp" method="POST" onsubmit="return validate();">
-	<input type="text" name="lat"
-			 style="background:rgba(0, 0, 0, 0.5); color:gray" /><font color="red"></font>
+<form name="myform" action="List.jsp" method="POST" onsubmit="return validate();">
 	<input type="text" name="lon"
+			 style="background:rgba(0, 0, 0, 0.5); color:gray" /><font color="red"></font>
+	<input type="text" name="lat"
 		 style="background:rgba(0, 0, 0, 0.5); color:gray" /><font color="red"></font>
 	<button type="submit" value="submit">
-		<img src="./Assignment2Images/magnifying_glass.jpeg" width="13" height="13" alt="search"><br />
+		<img src="./Assignment2Images/magnifying_glass.jpeg" width="13" height="13" alt="search">
+	</button>
+	<button type="button" name="mymap" onclick="show_map()">
+		<img src="./Assignment3Images/MapIcon.png" style="padding:0; background:none;" width="30px" height="30px"><br />
 	</button>
 	<br />
   	<input type="radio" name="option" value="city" onclick="switchform('city')"><font color="white">City</font>

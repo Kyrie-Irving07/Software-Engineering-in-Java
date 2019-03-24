@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -29,42 +34,69 @@ public class Weather extends HttpServlet {
 
 		boolean success = true;
 		PrintWriter out = response.getWriter();
-		Scanner scan = new Scanner(System.in);
-		// Load data from file and convert it to a map.
-		HashMap<String, City> map = new HashMap<String, City>();
-		try {
-			FileReader fr = new FileReader("./weather.txt");
-			BufferedReader br = new BufferedReader(fr);
-			
-			String line = br.readLine();
-			while(line != null) {
-				City city = City.parse(line, out);
-				System.out.println(city.name + " data read :" + String.valueOf(city.valid));
-				success &= city.valid;
-				map.put(city.name.toLowerCase(), city);
-				line = br.readLine();
-			}
-			fr.close();
-			br.close();
-		} catch(FileNotFoundException fnfe) {
-			System.out.println("fnfe : " + fnfe.getMessage());
-			out.println("fnfe : " + fnfe.getMessage() + "<br />");
-			scan.close();
-		} catch(IOException ioe) {
-			System.out.println("ioe : " + ioe.getMessage());
-			out.println("ioe : " + ioe.getMessage() + "<br />");
-			scan.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-			out.println(e.toString() + "<br />");
-			scan.close();
-		}
-		scan.close();
+		// Create SQL schema and table
+		prepare_sql(out);
+	}
+	
+	public static void prepare_sql(PrintWriter out) {
+		System.out.println("Prepare SQL table");
+		Connection conn = null;
+		Statement st = null;
 		
-		if(success) {
-			HttpSession session = request.getSession();
-			session.setAttribute("map", map);
-			System.out.println("Load successfully!");
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Assignment3?user=root&password=4f6e618ec3964b0052831a5c3a40d26d");
+			st = conn.createStatement();
+			String statement = "";
+			
+			try {
+				FileReader fr = new FileReader("./SQL.sql");
+				BufferedReader br = new BufferedReader(fr);
+				
+				String line = br.readLine();
+				while(line != null) {
+					statement += line;
+					if(line.contains(";")) {
+						st.addBatch(statement);
+						statement = "";
+					}
+					line = br.readLine();
+				}
+				fr.close();
+				br.close();
+				Weather.edit_sql(st);
+			} catch(FileNotFoundException fnfe) {
+				System.out.println("fnfe : " + fnfe.getMessage());
+				out.println("SQL: fnfe : " + fnfe.getMessage() + "<br />");
+			} catch(IOException ioe) {
+				System.out.println("ioe : " + ioe.getMessage());
+				out.println("SQL: ioe : " + ioe.getMessage() + "<br />");
+			}
+			
+		} catch (SQLException sqle) {
+			System.out.println("sqle: " + sqle.getMessage());
+		} catch (ClassNotFoundException cnfe) {
+			System.out.println("cnfe: " + cnfe.getMessage());
+		}
+		finally {
+			try {
+				if(st != null) {st.close();}
+				if(conn != null) {conn.close();}
+			} catch (SQLException sqle) {
+				System.out.println("Perpare sqle closing stuff: " + sqle.getMessage());
+			}
+		}
+	}
+	
+	public static void edit_sql(Statement st) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			st.executeBatch();
+		} catch (SQLException sqle) {
+			System.out.println("sqle: " + sqle.getMessage());
+		} catch (ClassNotFoundException cnfe) {
+			System.out.println("cnfe: " + cnfe.getMessage());
 		}
 	}
 	

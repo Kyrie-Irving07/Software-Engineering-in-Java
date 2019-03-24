@@ -37,12 +37,15 @@ h1 {
 </head>
 <body id="main" background="./Assignment2Images/background.jpg">
 
+ <div id="map" style="display:none; z-index :999;" >
+ </div>
+ 
   <div id="Capital"><a href="Homepage.jsp" style="color:white; text-decoration: none;"><h1>WeatherMeister</h1></a></div>
   
   <h2 style="color:white; top:40px; left:20px; position:absolute"><%=city_name %></h2>
   
   <div id="barform">
-	  <form name="myform" action="details.jsp" method="POST" onsubmit="return validate();">
+	  <form name="myform" action="List.jsp" method="POST" onsubmit="return validate();">
 			<input type="text" name="city" /><font color="red"></font>
 			<button id="barsearchbutton" type="submit">
 				<img src="./Assignment2Images/magnifying_glass.jpeg" width="13" height="13" alt="search"><br />
@@ -113,6 +116,36 @@ h1 {
 </body>
 
 <script>
+
+function disappear() {
+	document.getElementById("map").style.display = "none";
+}
+
+var map;
+
+function placeMarker(position, map) {
+    var marker = new google.maps.Marker({
+        position: position,
+        map: map
+    });
+    map.panTo(position);
+}
+
+function show_map() {
+	document.getElementById("map").style.display = "";
+	console.log(123);
+	var mapprop= {
+	  center:new google.maps.LatLng(39.9042, 
+				116.4074),
+	  zoom:8,
+	};
+    map = new google.maps.Map(document.getElementById('map'), mapprop);
+    map.addListener('click', function(e) {
+        placeMarker(e.latLng, map);
+        disappear();
+    });
+ }
+
 function show_image(weather) {
 	console.log("Show image " + weather);
 	var xhttp = new XMLHttpRequest();
@@ -194,12 +227,13 @@ function validate() {
 				 "&lon=" + 	document.myform.lon.value
 				 , false);
 	 }
-
+	 
 	 xhttp.send();
-	 if (xhttp.responseText.trim().length > 0) {
-			 document.getElementById("info").innerHTML = xhttp.responseText;
-			 return false; 
-	}
+	 var out = xhttp.responseText;
+	 if (out.trim().length > 0 && out != "1" && out != "More") {
+		 document.getElementById("info").innerHTML = xhttp.responseText;
+		 return false; 
+	 }
 	 return true;
 
 }

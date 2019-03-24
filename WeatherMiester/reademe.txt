@@ -1,0 +1,2 @@
+Before testing, execute the commands in SQL.sql on SQL workbench.
+Begin page is index.jsp

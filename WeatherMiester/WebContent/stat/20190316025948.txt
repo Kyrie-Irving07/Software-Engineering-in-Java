@@ -1,0 +1,3 @@
+templow.png | 0
+sun.png | 1
+temphigh.png | 1

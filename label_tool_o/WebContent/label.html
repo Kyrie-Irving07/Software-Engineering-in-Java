@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Labeling</title>
+</head>
+<body>
+
+<h1>Label the Image Below</h1><br />
+
+<form name="myform" action="done.html" method="POST" onsubmit="return test();">
+
+	<div id="image">
+		<img src="./image/Dog.jpeg" width="200" height="200"><br />
+		Push Next to Begin Now	
+	</div>
+
+	<input type="radio" name="label" value="1" checked=true>1
+	<input type="radio" name="label" value="2">2
+	<br />
+	
+	<button type="submit" name="Next" >Next</button>
+
+</form>
+
+<br />
+<button onclick="reset()">Reset</button>
+
+</body>
+
+<script>
+function test() {
+	var label;
+	 var radios = document.getElementsByName("label");
+	 for (var i = 0, length = radios.length; i < length; i ++)
+	 {
+	 	if(radios[i].checked)
+		{
+			label = radios[i].value;
+			break;
+		}
+	 }
+	
+	var xhttp = new XMLHttpRequest();
+	 
+	 xhttp.open("GET",
+			 "Load?label=" + label
+			 , false);
+
+	 xhttp.send();
+	 if (xhttp.responseText.trim().length != 0) {
+			 document.getElementById("image").innerHTML = xhttp.responseText;
+			 return false;
+	}
+	 return true;
+}
+
+function reset() {
+	var xhttp = new XMLHttpRequest();
+	 
+	 xhttp.open("GET",
+			 "reset"
+			 , false);
+
+	 xhttp.send();
+	 
+	 document.getElementById("image").innerHTML = "Push Next to Begin Now";
+}
+</script>
+
+</html>

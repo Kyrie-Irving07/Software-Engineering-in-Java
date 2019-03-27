@@ -26,6 +26,10 @@ import org.json.JSONObject;
 public class Test{
 	public static void main(String []args) throws Exception 
 	{
+		String s = "GET /test.html HTTP/1.1";
+		String [] array = s.split("/");
+		String [] dest = array[1].split(" ");
+		System.out.println(dest[0]);
 //		for(int i = 0; i < 20; i ++) {
 //			Random rand = new Random(); 
 //			int rand_int = rand.nextInt(1000); 

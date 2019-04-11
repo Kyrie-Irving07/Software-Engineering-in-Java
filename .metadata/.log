@@ -8893,3 +8893,15 @@ Binding(ALT+SHIFT+X R,
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2019-04-06 16:19:02.107
 !MESSAGE No repository found at http://download.eclipse.org/usssdk/drops/nightly/N896.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-09 15:04:15.437
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.ui 4 4 2019-04-11 08:35:57.765
+!MESSAGE Plug-in 'org.eclipse.egit.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.search.menu' is invalid): org.eclipse.egit.ui.actions.OpenCommitSearchPage
+
+!ENTRY org.eclipse.ui 4 4 2019-04-11 08:35:57.836
+!MESSAGE Plug-in 'org.eclipse.dltk.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.dltk.ui.refactoring.menu' is invalid): org.eclipse.dltk.ui.actions.Move
+
+!ENTRY org.eclipse.ui 4 4 2019-04-11 08:35:57.837
+!MESSAGE Plug-in 'org.eclipse.dltk.ui' contributed an invalid Menu Extension (Path: 'org.eclipse.dltk.ui.refactoring.menu' is invalid): org.eclipse.dltk.ui.actions.Rename

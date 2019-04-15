@@ -9,6 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -26,10 +27,24 @@ import org.json.JSONObject;
 public class Test{
 	public static void main(String []args) throws Exception 
 	{
-		String s = "GET /test.html HTTP/1.1";
-		String [] array = s.split("/");
-		String [] dest = array[1].split(" ");
-		System.out.println(dest[0]);
+		
+		
+//		String a = "ANVD";
+//		System.out.println(a.charAt(2) + a.charAt(1));
+		
+//		ArrayList<String> a = new ArrayList<String>();
+//		a.add("Hello");
+//		a.add("world");
+//		System.out.println(a.size());
+//		System.out.println(a.get(0));
+//		System.out.println(a.get(0));
+//		System.out.println(a.remove(0));
+//		System.out.println(a.remove(0));
+		
+//		String s = "GET /test.html HTTP/1.1";
+//		String [] array = s.split("/");
+//		String [] dest = array[1].split(" ");
+//		System.out.println(dest[0]);
 //		for(int i = 0; i < 20; i ++) {
 //			Random rand = new Random(); 
 //			int rand_int = rand.nextInt(1000); 

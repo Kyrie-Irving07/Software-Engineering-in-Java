@@ -17,3 +17,14 @@ CREATE TABLE Timeslot (
     status varchar(50) not null
 );
 
+CREATE TABLE Colors (
+	ColorID int(11) primary key not null auto_increment,
+    color varchar(50)
+);
+
+INSERT INTO Colors (color) VALUE ('RED');
+INSERT INTO Colors (color) VALUE ('GREEN');
+INSERT INTO Colors (color) VALUE ('BLUE');
+INSERT INTO Colors (color) VALUE ('YELLOW');
+INSERT INTO Colors (color) VALUE ('PINK');
+INSERT INTO Colors (color) VALUE ('BLACK');

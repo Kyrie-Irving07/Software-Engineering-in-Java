@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.lang.Exception;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.sql.Time;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -27,6 +28,38 @@ import org.json.JSONObject;
 public class Test{
 	public static void main(String []args) throws Exception 
 	{
+		
+		ArrayList<Myclass> l = new ArrayList<Myclass>();
+		Myclass m = new Myclass(3);
+		l.add(m);
+		ArrayList<Myclass> ll = (ArrayList<Myclass>) l.clone();
+		ll.get(0).k = 5;
+		System.out.println(l.get(0).k);
+		
+//		ArrayList<Integer> k = new ArrayList<Integer>();
+//		k.add(1);
+//		Myclass m = new Myclass(k);
+//		m.m.remove(0);
+//		System.out.println(k.isEmpty());
+		
+//		Myclass m = new Myclass();
+//		m.k = 9;
+//		Myclass n = m;
+//		n.k = 0;
+//		System.out.println(m.k);
+		
+//		String[] results = request.getParameterValues("box_name");
+//		ArrayList<Time> array = new ArrayList<Time>();
+//		for (int i = 0; i < results.length; i++) {
+//			String []info = result.split('\\|');
+//		    System.out.println(results[i]); 
+//		    array.add(new Time(info[0], str2int(info[1]))]);
+//		}
+//		for(int i = ; i < hours; i ++) {
+//			int index = randint(array.size());
+//			JDBCDriver.balabala();
+//			array.remove(index);
+//		}
 		
 		
 //		String a = "ANVD";
@@ -263,6 +296,17 @@ class T extends Thread {
 class uncertain <T> {
 	public void func(T t) {
 		System.out.println(t);
+	}
+}
+
+class Myclass {
+	public int k;
+	public ArrayList m;
+	public Myclass(ArrayList<Integer> l) {
+		this.m = l;
+	}
+	public Myclass(int k) {
+		this.k = k;
 	}
 }
 

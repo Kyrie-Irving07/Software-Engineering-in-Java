@@ -99,7 +99,7 @@ h1 {
 </div>
 
 <div id="currenttemp">
-	<button name="currenttemp" onclick="show_info('currenttemp')">
+	<button name="currenttemp" onclick="show_info('currenttemp')" %>>
 	 <img src="./Assignment2Images/currenttemp.png" width="100" height="100" alt="currenttemp"><br />
 	<font color=white style="font-size:large">CurrentTemp</font>
 	</button>

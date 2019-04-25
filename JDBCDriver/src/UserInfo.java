@@ -4,7 +4,7 @@ public class UserInfo {
 	public String username;
 	public String password;
 	public String status;
-	public int hour_worked;
+	public int hours_worked;
 	public int hourly_rate_of_pay;
 	
 	public boolean empty() {

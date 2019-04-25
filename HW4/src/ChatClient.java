@@ -10,16 +10,23 @@ import java.util.concurrent.locks.Lock;
 public class ChatClient extends Thread {
 
 	private BufferedReader br;
-	public ChatClient(String hostname, int port) {
+	public ChatClient() {
 		Socket s = null;
 		try {
+			System.out.println("Welcome to 201 Crossword.");
+			Scanner scan = new Scanner(System.in);
+			System.out.print("Enter the server hostname: ");
+			String hostname = scan.nextLine();
+			System.out.print("Enter the server port: ");
+			String portS = scan.nextLine();
+			int port = Integer.parseInt(portS);
+			
 			System.out.println("Connecting to " + hostname + ":" + port);
 			s = new Socket(hostname, port);
 			System.out.println("Connected to " + hostname + ":" + port);
 			br = new BufferedReader(new InputStreamReader(s.getInputStream()));
 			this.start();
 			PrintWriter pw = new PrintWriter(s.getOutputStream());
-			Scanner scan = new Scanner(System.in);
 			while(true) {
 				String line = scan.nextLine();
 				pw.println(line);
@@ -40,7 +47,8 @@ public class ChatClient extends Thread {
 		try {
 			while(true) {
 				String line = br.readLine();
-				System.out.println(line);
+				if(line != null)
+					System.out.println(line);
 			}
 		} catch (IOException ioe) {
 			System.out.println("ioe reading lines: " + ioe.getMessage());
@@ -48,7 +56,7 @@ public class ChatClient extends Thread {
 	}
 	
 	public static void main(String[] args) {
-		ChatClient cc = new ChatClient("localhost", 6789);
+		ChatClient cc = new ChatClient();
 		
 	}
 }
